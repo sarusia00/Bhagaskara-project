@@ -1,0 +1,56 @@
+[class*="break"] {
+    height: 30vh;
+    width:100%;
+    background-image: url("../images/section-bg.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    color:white;
+    margin-top:60px;
+    padding-top: 1px;
+    }
+.break div {
+    width:270px;
+    height:295px;
+    background-image: url("../images/icoEdu.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    display:block;
+    margin:0 auto;
+    margin-top:500px;
+    
+}
+.break p {
+    color:white;
+    font-size:60px;
+}
+.break2 {
+    // background: url("../images/section-bg.jpg") no-repeat;
+}
+.break2::before {
+    content: "";
+    display: block;
+    width:270px;
+    height:295px;
+    background: url("../images/icoMsg.png") no-repeat 0 0;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    display:block;
+    margin:0 auto;
+    margin-top:50px;
+}
+.break::before {
+    content: "";
+    display: block;
+    width:270px;
+    height:295px;
+    background: url("../images/icoMsg.png") no-repeat 0 0;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    display:block;
+    margin:0 auto;
+    margin-top:50px;
+}

@@ -1,0 +1,56 @@
+.skills p {
+   color:black;
+   text-transform: uppercase;
+    font-size:35px;
+    display:inline-block;
+    margin:0 auto;
+}
+[class*="skill-"] {
+    background-color:lightgray;
+    width:400px;
+    height:20px;
+    margin:0 auto;
+}
+.skills h4 {
+    text-align:center;
+    font-size:90px;
+    margin:100px;
+}
+.skill span {
+    background-color:#9f449b;
+    display:block;    
+    height:20px;   
+}
+.skill-1 span {
+  width:360px;    
+}
+.skill-2 span {
+  width:280px;  
+}
+.skill-3 span {
+  width: 300px; 
+}
+.skill-4 span {
+  width: 340px; 
+}
+
+.skill-wrap {
+    text-align:center;
+    margin:0 auto;
+    width:400px;
+    height:20px;
+}
+.skill-wrap p:first-child {
+    font-weight: bold;
+    text-align:left;
+    float: left;
+    padding:20px;
+}
+.skill-wrap p:nth-child(2) {
+  text-align:right;
+    float: right;
+    padding: 20px;
+}
+.skill-wrap {
+    clear: both;
+}

@@ -1,0 +1,56 @@
+.home {
+  background-color: #e8e5e5;
+}
+.contain h4 {
+    font-size: 80px;
+    text-align:center;
+}
+.home {
+    padding:100px 0;
+}
+@mixin bigIcon ($iconBig) {
+    display:block;
+    content:"";
+    margin:0 auto;
+    height: 400px;
+    width: 400px;
+    background-image: url(../images/icons-sprite.png); 
+    background-position-y: $iconBig;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.heart {
+    @include bigIcon (0);
+}
+.diamond {
+    @include bigIcon (-400px);
+}
+.cup {
+    @include bigIcon (-800px);
+}
+.phone {
+    @include bigIcon (-1200px);
+}
+@mixin bigIconHover ($iconBigHover) {
+    display:block;
+    content:"";
+    margin:0 auto;
+    height: 400px;
+    width: 400px;
+    background-image: url(../images/icons-sprite-hover.png); 
+    background-position-y: $iconBigHover;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.heart:hover {
+    @include bigIconHover (0);
+}
+.diamond:hover {
+    @include bigIconHover (-400px);
+}
+.cup:hover {
+    @include bigIconHover (-800px);
+}
+.phone:hover {
+    @include bigIconHover (-1200px);
+}

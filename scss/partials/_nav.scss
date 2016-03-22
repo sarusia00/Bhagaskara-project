@@ -1,0 +1,29 @@
+$darkGray:#989191;
+nav {
+    width:100%;
+}
+
+.nav p {
+    display: block;
+    font-size: 90px;
+    color:$darkGray;
+}
+.navbar {
+    width:100%;
+    margin:0 auto;
+    margin-bottom:55px;
+}
+.navbar li{
+    width:49%;
+    color: $darkGray;
+    font-size:60px;
+    display:inline-block;
+    text-align:center;
+}
+.navbar li:last-child {
+    margin-left:25%;
+}
+.navbar li:hover {
+    color:#9f449b;
+    font-weight: bold;
+}

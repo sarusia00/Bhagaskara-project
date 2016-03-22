@@ -1,0 +1,11 @@
+@mixin icon ($iconPosition) {
+    display:block;
+            content:"";
+            margin:0 auto;
+            height: 70px;
+            width: 70px;
+            background-image: url(../images/icons-menu2.png); 
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: $iconPosition;
+}
