@@ -1,15 +1,44 @@
-.team h4 {
-    text-align:center;
-    font-size:90px;
-    margin:100px;
+.team{
+  padding-top:100px;
 }
+
 .team .photo {
     width:400px;
+    border-radius:50%;
+    display:inline-block;
+    
+}
+
+.photo img {
+  border-radius: 50%;
+  width:400px;
+}
+.visible {
+    display:400px;
     height:400px;
     border-radius:50%;
-    background-color:darkgray;
-    margin:0 auto;
     display:inline-block;
+}
+.window {
+  overflow:hidden;
+  width:400px;
+  margin: 0 auto;
+}
+.team-slider {
+  display:inline-block;
+  position:relative;
+  left: 0;
+  font-size:0;
+  transition: all .5s ease-in-out;
+}
+.team-slider li:nth-child(1) {
+  background: red;
+}
+.team-slider li:nth-child(2) {
+  background: blue;
+}
+.team-slider li:nth-child(3) {
+  background: hotpink;
 }
 .team .left {
     display:inline-block;
@@ -23,10 +52,18 @@
     height:109px;
     background-image:url("../images/arr-r.png");
 }
+
+.icon-wrap {
+  text-align:center;
+}
 .contain {
     display:block;
-    margin:0 auto;
-    text-align:center;
+    //width:500px;
+    //margin:0 auto;
+    //text-align:center;
+}
+.photo p {
+  font-size:40px;
 }
 .contain .iconfb {
     width:100px;
@@ -45,4 +82,7 @@
     background-size: cover;
     background-position: center;
     display:inline-block;
+}
+.slider-nav {
+  text-align:center;
 }

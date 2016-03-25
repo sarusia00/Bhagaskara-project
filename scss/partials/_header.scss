@@ -1,5 +1,5 @@
-header {
-    height: 100vh;
+.main-header {
+    min-height: 100vh;
     width:auto;
     background-image: url("../images/hero-bg.jpg");
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@ header {
     font-size: 20px;
 }
 
-.logo h1, p {
+.header-text h1, p {
     display:block;
     text-align: center;
     margin: 0 auto;
@@ -17,22 +17,20 @@ header {
     font-weight: 400;
     padding: 2vh;   
 }
-.logo h1 {
+.header-text h1 {
    font-size: 4.8em; 
     padding: 4vh;
     
 }
-.logo p:last-child{
+.header-text p:last-child{
     margin: 0 auto;
     max-width: 900px;
     font-size: 2.3em;
 }
-.logo {
+.header-text {
     margin-bottom:50px;
 }
-/*.logo {
-    height: 35vh;
-}*/ 
+
 .main {
     position:relative;
     display: flex;
@@ -72,7 +70,7 @@ header {
     height: 70px;
     width: 70px;
     background-image: url(../images/icons-menu2.png); 
-    background-position-y: $iconPosition;
+    background-position: $iconPosition;
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -80,32 +78,32 @@ header {
 
 .main .box1 {
     &::before {
-        @include icon (0);
+        @include icon (0 0);
     }
 }
 .main .box2 {
     &::before {
-        @include icon (-70px);
+        @include icon (0 -70px);
     }
 }
 .main .box3 {
     &::before {
-        @include icon (-140px);
+        @include icon (0 -140px);
     }
 }
 .main .box4 {
     &::before {
-        @include icon (-210px);
+        @include icon (0 -210px);
     }
 }
 .main .box5 {
     &::before {
-        @include icon (-280px);
+        @include icon (0 -280px);
     }
 }
 .main .box6 {
     &::before {
-        @include icon (-350px);
+        @include icon (0 -350px);
     }
 }
 .main .box {
@@ -117,13 +115,13 @@ header {
     }
 }
 @media (min-width:500px) and (orientation:landscape) {
-    .logo h1, p {
+    .header-text h1, p {
       font-size: 1.5em;  
     }
-    .logo p:last-child{
+    .header-text p:last-child{
       font-size: 1em;  
     } 
-    .logo h1 {
+    .header-text h1 {
     font-size: 3em; 
     }
 }

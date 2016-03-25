@@ -1,0 +1,30 @@
+footer {
+  width:100%;
+}
+footer .logo {
+  
+  padding:0;
+}
+.icon {
+  width:100px;
+  height:100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display:inline-block;
+}
+.allIcons {
+  display:inline-block;
+  float:right;
+  line-height: 30px;
+  vertical-align: bottom;
+}
+.fb {
+    background-image: url("../images/fb.png");
+}
+.goog {
+    background-image: url("../images/goog.png");
+}
+.twit {
+    background-image: url("../images/twit.png");
+}

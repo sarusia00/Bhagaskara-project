@@ -1,17 +1,36 @@
 $darkGray:#989191;
 nav {
-    width:100%;
+  width:100%;
+  min-height:110px;
 }
-
-.nav p {
+.logwrap {
+  padding:15px;
+  height:100%;
+  width:auto;
+  margin-bottom: 20px;
+}
+ .logo {
     display: block;
     font-size: 90px;
     color:$darkGray;
+   float:left;
+   width:50%;
+}
+.b-menu {
+  float:right;
+  width:110px;
+  height:110px;
+  background-image: url("../images/hamburger.png");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+  margin:10px;
 }
 .navbar {
     width:100%;
     margin:0 auto;
     margin-bottom:55px;
+  padding-top:150px;
 }
 .navbar li{
     width:49%;
@@ -26,4 +45,7 @@ nav {
 .navbar li:hover {
     color:#9f449b;
     font-weight: bold;
+}
+.hide {
+  display:none;
 }

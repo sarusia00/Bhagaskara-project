@@ -1,8 +1,28 @@
-.percentage {
-    background-color:gray;
+.percentage-section {
+    background-color:#e8e5e5;
     text-align:center;
 }
-.wrapp {
+.per-wrap {
     display:inline-block;
     text-align: center;
+}
+.per-wrap p:first-child {
+  font-size:135px;
+}
+.per-wrap p:nth-child(2) {
+  font-size:60px;
+}
+.desc-photo {
+  width:200px;
+  height:200px;
+  background-color:gray;
+  border-radius:50%;
+  margin:0 auto;
+  
+}
+.desc-slider {
+  padding:100px;
+}
+.desc-slider div {
+  margin-top:50px;
 }
