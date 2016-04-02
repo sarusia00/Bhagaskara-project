@@ -1,174 +1,227 @@
 .main-header {
-    min-height: 100vh;
-    width:auto;
-    background-image: url("../images/hero-bg.jpg");
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size:cover;
-    color:white;
-    font-size: 20px;
+  min-height: 100vh;
+  width: auto;
+  background-image: url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-size: 20px;
 }
 
-.header-text h1, p {
-    display:block;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 2.8em;
-    font-weight: 400;
-    padding: 2vh;   
+.header-text h1,
+p {
+  font-family: "existencelight";
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2.8em;
+  font-weight: 400;
+  padding: 2vh;
 }
+
 .header-text h1 {
-   font-size: 4.8em; 
-    padding: 4vh;
-    
+  font-size: 4.8em;
+  padding: 4vh;
 }
-.header-text p:last-child{
-    margin: 0 auto;
-    max-width: 900px;
-    font-size: 2.3em;
+
+.header-text p:last-child {
+  margin: 0 auto;
+  max-width: 900px;
+  font-size: 2.3em;
 }
+
 .header-text {
-    margin-bottom:50px;
+  margin-bottom: 50px;
 }
 
 .main {
-    position:relative;
-    display: flex;
-    flex-flow:column wrap;
-    font-size: 2em;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 2em;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
+
 .group div {
-    display:inline-block;
-    height: 275px;
-    width:275px;
-    background-image: url("../images/bha.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  display: inline-block;
+  height: 275px;
+  width: 275px;
+  background-image: url("../images/bha.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
+
 .group div:hover {
-    background-image: url("../images/portbg.png");
+  background-image: url("../images/portbg.png");
 }
 
 .box a {
-    color:white;
-    text-decoration:none;
-    font-weight: bold;
-    position:relative;
-    display: table;
-    margin: 0 auto;
-      
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  display: table;
+  margin: 0 auto;
+}
+.scroll {
+  height:45px;
+  width:42px; 
+  background-image: url(../images/arr2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0 auto;
+  margin-bottom:10px;
+  visibility:hidden;
 }
 
 @mixin icon ($iconPosition) {
-    display:block;
-    content:"";
-    margin:0 auto;
-    height: 70px;
-    width: 70px;
-    background-image: url(../images/icons-menu2.png); 
-    background-position: $iconPosition;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+  display: block;
+  content: "";
+  margin: 0 auto;
+  height: 70px;
+  width: 70px;
+  background-image: url(../images/icons-menu2.png);
+  background-position: $iconPosition;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main .box1 {
+  &::before {
+    @include icon (0 0);
+  }
+}
+
+.main .box2 {
+  &::before {
+    @include icon (0 -70px);
+  }
+}
+
+.main .box3 {
+  &::before {
+    @include icon (0 -140px);
+  }
+}
+
+.main .box4 {
+  &::before {
+    @include icon (0 -210px);
+  }
+}
+
+.main .box5 {
+  &::before {
+    @include icon (0 -280px);
+  }
+}
+
+.main .box6 {
+  &::before {
+    @include icon (0 -350px);
+  }
+}
+
+.main .box {
+  padding: 67px;
+}
+
+.main .box {
+  &::before {
+    position: relative;
+    left: -20px;
+  }
+}
+
+@media (min-width:500px) and (orientation:landscape) {
+  .main .box1 {
     &::before {
         @include icon (0 0);
     }
 }
 .main .box2 {
     &::before {
-        @include icon (0 -70px);
+        @include icon (0 -40px);
     }
 }
 .main .box3 {
     &::before {
-        @include icon (0 -140px);
+        @include icon (0 -80px);
     }
 }
 .main .box4 {
     &::before {
-        @include icon (0 -210px);
+        @include icon (0 -117px);
     }
 }
 .main .box5 {
     &::before {
-        @include icon (0 -280px);
+        @include icon (0 -155px);
     }
 }
 .main .box6 {
     &::before {
-        @include icon (0 -350px);
-    }
-}
-.main .box {
-    padding: 67px;
-}
-.main .box {
-    &::before {
-        
-    }
-}
-@media (min-width:500px) and (orientation:landscape) {
-    .header-text h1, p {
-      font-size: 1.5em;  
-    }
-    .header-text p:last-child{
-      font-size: 1em;  
-    } 
-    .header-text h1 {
-    font-size: 3em; 
-    }
-}
-/*@media (min-width: 500px) {
-    .group div {
-    display:inline-block;
-    height: 130px;
-    width:130px;
-    }
-    
-  .main .box1 {
-    &::before {
-        @include icon (0);
-    }
-}
-.main .box2 {
-    &::before {
-        @include icon (-45x);
-    }
-}
-.main .box3 {
-    &::before {
-        @include icon (-90px);
-    }
-}
-.main .box4 {
-    &::before {
-        @include icon (-135px);
-    }
-}
-.main .box5 {
-    &::before {
-        @include icon (-170px);
-    }
-}
-.main .box6 {
-    &::before {
-        @include icon (-215px);
+        @include icon (0 -195px);
     }
 } 
- .main .box {
-    &::before {
-       width:45px;
-       height:45px;
-    }
+  .box1 a, .box2 a {
+    position: relative;
+    left: -25px;
+    top: -25px;
+  }
+  .box3 a, .box4 a,.box6 a {
+    position: relative;
+    left: -36px;
+    top: -25px;
+  }
+  .box5 a {
+    position: relative;
+    left: -20px;
+    top: -25px;
+  }
+  .box::before {
+    position: relative;
+    left: -30px;
+    top: -25px;
+  }
+  .header-text h1,
+  p {
+    font-size: 25px;
+  }
+  .header-text p:last-child {
+    font-size: 20px;
+  }
+  .header-text h1 {
+    font-size: 3em;
+  }
+  .main .group:nth-child(2) {
+    position: relative;
+    left: -280px;
+  }
+  .main .group:nth-child(3) {
+    position: relative;
+    left: 280px;
+    top: -140px;
+  }
+  .main .box {
+    height: 50px;
+    width: 50px;
+  }
+  .main .box::before {
+    width: 40px;
+    height: 40px;
+  }
+  .box a {
+    font-size: 0.5em;
+  }
+  .scroll {
+    visibility:visible;
+  }
 }
+
+  
     
-    
-    
-}*/

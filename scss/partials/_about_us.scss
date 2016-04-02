@@ -1,7 +1,7 @@
 .about {
     background-color:white;
     height:auto;
-  padding-top:60px;
+    padding-top:60px;
 }
 
 .imgAbout {
@@ -18,4 +18,27 @@
     font-size: 2em;
     padding: 50px;
 }
-
+@media (min-width:500px) and (orientation:landscape) {
+  .imgAbout {
+    height: 297px;
+    width: 462px;
+    display:inline-block;
+    margin-left:250px;
+  }
+  .description {
+    font-size:18px;
+    width:400px;
+    display:inline-block;
+    position:relative;
+    top:-110px;
+  }
+  .about .button {
+    display:inline-block;
+    position:relative;
+    top:-40px;
+    left:-315px;
+  }
+  
+  
+  
+}

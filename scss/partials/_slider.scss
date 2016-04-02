@@ -26,3 +26,24 @@
 .desc-slider div {
   margin-top:50px;
 }
+@media (min-width:500px) and (orientation:landscape) {
+  .per-wrap {
+    margin:50px 40px;
+  p:first-child {
+    font-size:55px;
+    }
+  p:nth-child(2) {
+    font-size: 25px;
+  }
+  }
+  .desc-slider { 
+  div:nth-child(2) {
+      font-size:15px;
+      width:350px;
+      margin:0 auto;
+    padding-top:20px;
+  }
+}
+  
+  
+}

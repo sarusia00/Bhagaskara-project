@@ -49,3 +49,33 @@ nav {
 .hide {
   display:none;
 }
+@media (min-width:500px) and (orientation:landscape) {
+  .logo {
+    font-size:40px;
+    width:30%;
+    display:inline-block;
+    padding-top:35px;
+    float:right;
+  }
+  .b-menu {
+    display:none;
+  }
+  nav {
+    display:inline-block;
+    width:69%;
+  }
+  .navbar {
+    padding-top:50px;
+    margin-left:70px;
+  }
+  .navbar li {
+    display:inline-block;
+    width:auto;
+    font-size:20px;
+    text-transform:uppercase;
+    margin:0 10px;
+  }
+  .navbar li:last-child {
+    margin-left:0;
+  }
+}

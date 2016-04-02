@@ -54,6 +54,8 @@
 
 }
 .skillwrap p:first-child {
+  font-family:"lato";
+  text-transform: uppercase;
     font-weight: bold;
     text-align:left;
     float: left;
@@ -63,4 +65,39 @@
   text-align:right;
   float: right;
   padding: 10px;
+}
+@media (min-width:500px) and (orientation:landscape) {
+  .skills-section {
+    text-align:center;
+  }
+  .skillwrap {
+  display:inline-block;
+    width:230px;
+    margin:10px 80px;
+    p {
+  font-size:15px;  
+    }
+  }
+  .skill {
+    width:200px;
+    height:10px;
+}
+  .skill span {
+    background-color:#9f449b;
+    display:block;    
+    height:10px;   
+}
+  .skill-1 span {
+  width:180px;    
+}
+.skill-2 span {
+  width:140px;  
+}
+.skill-3 span {
+  width: 150px; 
+}
+.skill-4 span {
+  width: 170px; 
+}
+  
 }

@@ -16,11 +16,20 @@
 @import "partials/additions";
 
 body {
-    font-family:"existencelight";
+    font-family: 'Lato', sans-serif;
+  font-weight:100;
     font-size: 100%;
 }
 span {
     color: #9f449b;
+}
+h1, h2 {
+  font-family: "existencelight";
+}
+@media (min-width:500px) and (orientation:landscape) {
+  body {
+    font-size:70%;
+  }
 }
 
 

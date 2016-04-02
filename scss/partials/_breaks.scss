@@ -44,7 +44,7 @@
 .break::before {
     content: "";
     display: block;
-    width:270px;
+    width:272px;
     height:295px;
     background: url("../images/icoMsg.png") no-repeat 0 0;
     background-repeat: no-repeat;
@@ -53,4 +53,20 @@
     display:block;
     margin:0 auto;
     margin-top:50px;
+}
+@media (min-width:500px) and (orientation:landscape) {
+  .break::before {
+    width:109px;
+    height:118px;
+    margin-top:10px;
+}
+  .break2::before {
+    width:109px;
+    height:118px;
+    margin-top:10px;
+}
+  .break p {
+    font-size:20px;
+    
+  }
 }

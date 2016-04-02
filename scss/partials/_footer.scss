@@ -28,3 +28,21 @@ footer .logo {
 .twit {
     background-image: url("../images/twit.png");
 }
+@media (min-width:500px) and (orientation:landscape) {
+.icon {
+    width:50px;
+    height:50px;
+  }
+.allIcons {  
+  position:relative;
+  top:-85px;
+  left:-480px;
+  }
+  footer .logo {
+    display:block;
+    width:100%;
+    margin:0 auto;
+    margin-bottom:100px;
+    margin-top:100px;
+  }
+}

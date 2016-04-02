@@ -1,20 +1,66 @@
 form {
-  width:80%;
-  margin:0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
-.name, .email, .message{
-  width:100%;
-  font-size:60px;
-  padding:20px;
-  margin:20px;
+
+.name,
+.email,
+.message {
+  width: 100%;
+  font-size: 60px;
+  padding: 20px;
+  margin: 20px;
   border: 1px solid gray;
 }
+
 .message {
-  height:500px;
+  height: 500px;
 }
-footer  {
-  p:nth-child(2), p:nth-child(3) {
-    font-weight:bold;
+
+.address {
+  p {
+    font-family: 'Lato', sans-serif;
+  }
+  p:nth-child(2),
+  p:nth-child(3) {
+    font-weight: bold;
   }
 }
 
+@media (min-width:500px) and (orientation:landscape) {
+  .name,
+  .email,
+  .message {
+    display: block;
+    width: 400px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+    margin-right: 10px;
+  }
+  .message {
+    height: 200px;
+  }
+  form {
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 285px;
+    .button {
+      margin-left: 120px;
+      margin-top: 7px;
+    }
+  }
+  .address {
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    top: -70px;
+    left: -125px;
+    p {
+      width: 400px;
+      font-size: 18px;
+      text-align: left;
+    }
+  }
+}
