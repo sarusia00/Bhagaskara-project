@@ -23,9 +23,9 @@ $(function () {
    display: "inline-block",
    position: "relative",
  })
-/* //zawsze musisz klonowac 2 razy wiecej niz wyswietlasz
+ //zawsze musisz klonowac 2 razy wiecej niz wyswietlasz
   
-  right.on("click", function () {
+  /*right.on("click", function () {
     console.log(offset)
     if (offset === 800) {
       window.append(newSlider);
@@ -51,6 +51,7 @@ $(function () {
       });
     }
   });*/
+ 
 //wracajacy slider
 right.on("click", function () {
     if (offset === 800) {

@@ -1,8 +1,8 @@
-.team{
+#team{
   padding-top:100px;
 }
 
-.team .photo {
+#team .photo {
     width:400px;
     border-radius:50%;
     display:inline-block;
@@ -40,13 +40,13 @@
 .team-slider li:nth-child(3) {
   background: hotpink;
 }
-.team .left {
+#team .left {
     display:inline-block;
     width:102px;
     height:109px;
     background-image:url("../images/arr-l.png");   
 }
-.team .right {
+#team .right {
     display:inline-block;
     width:102px;
     height:109px;

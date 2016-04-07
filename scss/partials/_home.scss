@@ -1,14 +1,11 @@
-.home {
+#home {
   background-color: #e8e5e5;
+  padding: 100px 0;
 }
 
 .container li h4 {
   font-size: 80px;
   text-align: center;
-}
-
-.home {
-  padding: 100px 0;
 }
 
 @mixin bigIcon ($iconBig) {

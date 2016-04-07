@@ -1,8 +1,8 @@
 
-.skills-section {
+#skills-section {
   padding:100px;
 }
-.skills-section .section-header h2 {
+#skills-section .section-header h2 {
   margin-bottom: 90px;
 }
 
@@ -21,7 +21,7 @@
     clear:both;
   
 }
-.skills-section h4 {
+#skills-section h4 {
     text-align:center;
     font-size:90px;
     margin:100px;
@@ -67,7 +67,7 @@
   padding: 10px;
 }
 @media (min-width:500px) and (orientation:landscape) {
-  .skills-section {
+  #skills-section {
     text-align:center;
   }
   .skillwrap {

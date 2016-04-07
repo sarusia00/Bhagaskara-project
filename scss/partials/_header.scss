@@ -6,7 +6,11 @@
   background-position: center;
   background-size: cover;
   color: white;
+  a {
   font-size: 20px;
+    text-align:center;
+    font-family: 'Arial', sans-serif;
+  }
 }
 
 .header-text h1,
@@ -15,9 +19,9 @@ p {
   display: block;
   text-align: center;
   margin: 0 auto;
-  font-size: 2.8em;
+  font-size: 2em;
   font-weight: 400;
-  padding: 2vh;
+  padding: 20px;
 }
 
 .header-text h1 {
@@ -39,7 +43,7 @@ p {
   position: relative;
   display: flex;
   flex-flow: column wrap;
-  font-size: 2em;
+  //font-size: 2em;
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -59,7 +63,7 @@ p {
   background-image: url("../images/portbg.png");
 }
 
-.box a {
+.group a {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -133,11 +137,16 @@ p {
 .main .box {
   &::before {
     position: relative;
-    left: -20px;
+    left: 0;
   }
 }
 
 @media (min-width:500px) and (orientation:landscape) {
+  .main .box {
+  &::before {
+    left: -20px;
+  }
+}
   .main .box1 {
     &::before {
         @include icon (0 0);
@@ -178,7 +187,7 @@ p {
     left: -36px;
     top: -25px;
   }
-  .box5 a {
+  .box5 p {
     position: relative;
     left: -20px;
     top: -25px;
